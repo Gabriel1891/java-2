@@ -15,10 +15,10 @@ public class Imc {
     float peso;
     float altura;
 
-    public Imc() {
+    public Imc(float p, float a) {
         
-        peso=80;
-        altura=1.68f;
+        peso=p;
+        altura=a;
     }
     
     
