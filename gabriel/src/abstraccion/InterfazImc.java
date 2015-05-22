@@ -11,15 +11,11 @@ package abstraccion;
  */
 public class InterfazImc {
     public static void main (String []oso){
-    
-        float peso=84;
-        float altura=1.68f;
+  
+        Imc imc=new Imc();
         
-        // apliamos formula
-        float imc=peso/(altura*altura);
-        
-        System.out.println("Tu imc es:" + imc);
-               
+        System.out.println(imc.calcular());
     
-    }
-}
+            
+            
+            }}
