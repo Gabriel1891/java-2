@@ -16,6 +16,17 @@ public class Extra extends javax.swing.JFrame {
      */
     public Extra() {
         initComponents();
+         int z[]=new int[]{3,-12,7};
+        String hola="hola";
+        
+        byte []algo= hola.getBytes();
+        StringBuilder builder =new StringBuilder();
+        for(byte b:algo){
+                builder.append((char)b);
+        }
+        jLabel1.setText(builder.toString());
+        
+        
     }
 
     /**
