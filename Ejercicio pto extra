@@ -1,0 +1,27 @@
+en el boton 1:
+    String f= Entrada.getText();
+            byte[]arreglo= f.getBytes();
+            StringBuilder builder=new StringBuilder();
+        
+            for(byte b:arreglo){
+                builder.append(b);
+                builder.append(",");
+        
+        }
+            String t= builder.toString();
+        
+            jLabel2.setText(t);
+
+en el boton 2:
+     String f= Entrada.getText();
+        byte[]arreglo= f.getBytes();
+        StringBuilder builder=new StringBuilder();
+        
+        for(byte b:arreglo){
+            builder.append((char)b);
+            
+        
+        }
+        String t= builder.toString();
+        
+        jLabel3.setText(t);
