@@ -6,6 +6,11 @@
 package Herencia;
 
 
-public class Delfin extends Animal{
+public class Delfin extends Animal implements ComportamientoRuido{
+   
+    @Override
+    public String hacerRuido() {
+        return getNombre() + " briiiiip!!!" ;
     
+}
 }
