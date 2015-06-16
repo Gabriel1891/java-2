@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class Probarcheked {
+
+
+    public static void main(String[] args) throws  Exception{
+        File f=new File("archivaldo");                //crea un archivo
+        
+            FileOutputStream fos=new FileOutputStream(f);
+            ObjectOutputStream oos=new ObjectOutputStream(fos);
+      
+    }
+    
+}
