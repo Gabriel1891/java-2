@@ -1,0 +1,64 @@
+Ejercicio:
++crear dos clases una que se llame UsuarioMayor y otra que se llame UsuarioMenor ambas deben heredar la clase usuario
++implementar dichas interfaces en los dos clases anteriores     
++sobre escribir el metodo pasado por la interfaz en las dos clases anteriores
+           
+            public class UsuarioMayor extends Usuario implements RecomendarBebidas{
+      
+          @Override
+          public void recomendar(Bebida b) {
+              
+          }
+          
+      }
+      
+            public class UsuarioMenor extends Usuario implements RecomendarBebidas{
+      
+          @Override
+          public void recomendar(Bebida b) {
+              
+          }
+          
+      }
+
++crear una interfaz que se llame RecomendarBebidas y que tenga un metodo que reciba un parametro de tipo Bebida
+
+              public interface RecomendarBebidas {
+                  public void recomendar(Bebida b);
+                  
+                  
+              }
+
++en la clase bebida declarar un atributo de  tipo string que se llame tipo igualmente declarar un atributo de tipo
+arreglo de strings
+
++en esa misma clase generar un  metodo que se llame obtener recomendaciones. alli crear un arreglo con con 5 bebidas
+alcoholicas y 5 bebidas no alcoholicas
+
++si el tipo de bebida es alcoholica regresar el arreglo de bebidas alcoholicas y si el tipo es no alcoholica regresar
+el tipo de arreglo de no alcoholicas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
