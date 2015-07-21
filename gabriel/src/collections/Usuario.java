@@ -8,10 +8,10 @@ package collections;
 
 public class Usuario {
     String nombre;
-    int edad;
+    Integer edad;
     String email;
     
-    public Usuario(String nombre, int edad, String email) {
+    public Usuario(String nombre, Integer edad, String email) {
         this.nombre = nombre;
         this.edad = edad;
         this.email = email;
@@ -25,11 +25,11 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
+    public Integer getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(Integer edad) {
         this.edad = edad;
     }
 
