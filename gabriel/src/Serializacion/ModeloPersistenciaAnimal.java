@@ -5,19 +5,42 @@
  */
 package Serializacion;
 import java.io.*;
+import java.util.ArrayList;
 /**
  *
  * @author T-107
  */
 public class ModeloPersistenciaAnimal {
+    
+        String ruta="C:\\Users\\T101\\Documents\\animalitos.xxx";
+        ArrayList<Animal> animales;
+        public ModeloPersistenciaAnimal(){
+            animales=new ArrayList<Animal>();
+            
+        }
     public void guardar(Animal animal)throws Exception{
         //Paso1: Crear el archivo donde se guardara el animal
-        File file=new File("C:\\Users\\T101\\Documents\\animalitos.xxx");
+        File file=new File(ruta);
+        if(file.exists()){
+            animales= buscartodos();
+            
+        }
+        
         FileOutputStream fos=new FileOutputStream(file);
         ObjectOutputStream oos=new ObjectOutputStream(fos);
-        oos.writeObject(animal);
+        animales.add(animal);
+        oos.writeObject(animales);
         System.out.println("Animalito comprimido con exito");
     
     }
+     public ArrayList<Animal> buscartodos()throws Exception{
+        Animal a=new Animal();
+        File f=new File(ruta);
+        FileInputStream fis=new FileInputStream(f);
+        ObjectInputStream ois=new ObjectInputStream(fis);
+        animales= (ArrayList<Animal>)ois.readObject();
+        return animales;        
+    }
     
+   
 }
